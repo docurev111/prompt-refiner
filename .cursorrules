@@ -1,0 +1,11 @@
+# Project: Vibe Coder Prompt Refiner Tool
+
+## Tech Stack Standards
+- Framework: Next.js 16 (App Router)
+- Component Library: shadcn/ui (React 19 compatible)
+- Styling: Tailwind CSS 4.0 (Using modern inline configuration, no legacy directives)
+- Architecture: Server-Driven UI with isolated client components for interactivity
+
+## Optimization & Multi-Device Compatibility
+- Strict exclusion of `node_modules`, `.next`, and build artifacts from local background indexers.
+- Modularized file boundaries so that the codebase can be built seamlessly across low-spec and high-spec machines.
