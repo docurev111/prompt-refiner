@@ -1,0 +1,16 @@
+You are building a Next.js 14 App Router project called Vibe Prompt Refiner.
+
+Stack: Next.js 14, TypeScript (strict), Tailwind CSS, shadcn/ui, Google Gemini API.
+
+Coding rules:
+- TypeScript strict mode. No `any` types ever.
+- Tailwind only for styling. No inline styles except dynamic values.
+- Use shadcn/ui components: Button, Card, Textarea, Select, Badge, Separator.
+- Gemini API calls ONLY inside app/api/ route handlers. Never in client components.
+- All API response shapes must use types from lib/types.ts.
+- Use async/await exclusively. No .then() chains.
+- Components live in components/, named PascalCase, single responsibility.
+- Add "use client" only when the component uses state or browser APIs.
+- Every async action must have a loading state and a user-friendly error state.
+- Never expose GEMINI_API_KEY to the client. It's server-side only.
+- Validate all user input on both client and server before making API calls.
